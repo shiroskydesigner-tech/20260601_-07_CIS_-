@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Chips & Badges</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { gap: 18px; padding: 24px 28px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 8px;
+    height: 28px; padding: 0 14px; border-radius: 999px;
+    font-family: var(--font-display); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    border: 1px solid var(--line);
+  }
+  .chip.dot::before { content: ""; width: 6px; height: 6px; border-radius: 999px; background: currentColor; }
+  .chip.mist { background: var(--mio-soft-lavender); color: var(--mio-purple-700); border-color: transparent; }
+  .chip.purple { background: var(--mio-misty-purple); color: var(--mio-white); border-color: transparent; }
+  .chip.cool { background: rgba(107,207,255,0.18); color: #1d5d80; border-color: transparent; }
+  .chip.lime { background: var(--mio-lime); color: var(--mio-deep-gray); border-color: transparent; }
+  .chip.outline { background: transparent; color: var(--mio-deep-gray); }
+  .chip.dark { background: var(--mio-deep-gray); color: var(--mio-white); border-color: transparent; }
+  .row { gap: 10px; flex-wrap: wrap; align-items: center; }
+  .grp { display: flex; flex-direction: column; gap: 8px; }
+  .tag { font-family: var(--font-mono); font-size: 10.5px; color: var(--fg-muted); letter-spacing: 0.04em; }
+</style></head>
+<body>
+<div class="card">
+  <div class="label">Chips & Badges</div>
+  <div class="grp">
+    <span class="tag">category</span>
+    <div class="row">
+      <span class="chip mist">原葉茶 Base Tea</span>
+      <span class="chip mist">果茶 Fruit</span>
+      <span class="chip mist">鮮奶茶 Fresh Milk</span>
+      <span class="chip mist">奶蓋 Cream Cap</span>
+    </div>
+  </div>
+  <div class="grp">
+    <span class="tag">status</span>
+    <div class="row">
+      <span class="chip lime dot">New · 新品</span>
+      <span class="chip cool dot">Limited</span>
+      <span class="chip purple">Signature</span>
+      <span class="chip outline">Sold out</span>
+      <span class="chip dark">07 · Kaohsiung</span>
+    </div>
+  </div>
+</div>
+</body></html>

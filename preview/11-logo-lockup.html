@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Logo · Lockup</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { gap: 16px; padding: 28px 32px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; flex: 1; align-items: stretch; }
+  .frame { display: flex; align-items: center; justify-content: center; border-radius: 14px; padding: 0; min-height: 240px; overflow: hidden; }
+  .frame img { width: 200px; height: 200px; display: block; }
+  .frame.light { background: var(--mio-white); border: 1px solid var(--line); }
+  .frame.dark  { background: var(--mio-misty-purple); }
+  .cap { font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); letter-spacing: 0.04em; }
+</style></head>
+<body>
+<div class="card">
+  <div class="row between center-x">
+    <div class="label">Primary Lockup</div>
+    <div class="mono">use on light surfaces by default</div>
+  </div>
+  <div class="grid">
+    <div class="col gap-2">
+      <div class="frame light"><img src="../assets/logos/logo_lockup_inverse.svg" alt="MIO7 lockup, purple on white"></div>
+      <span class="cap">logo_lockup_inverse.svg · purple on white</span>
+    </div>
+    <div class="col gap-2">
+      <div class="frame dark"><img src="../assets/logos/logo_lockup.svg" alt="MIO7 lockup, white on purple"></div>
+      <span class="cap">logo_lockup.svg · white on misty purple</span>
+    </div>
+  </div>
+</div>
+</body></html>

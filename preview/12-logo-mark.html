@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Logo · Mark</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { gap: 14px; padding: 24px 28px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; flex: 1; }
+  .frame { display: flex; align-items: center; justify-content: center; border-radius: 14px; padding: 22px; min-height: 160px; }
+  .frame img { width: 96px; height: 96px; }
+  .light { background: var(--mio-white); border: 1px solid var(--line); }
+  .purple { background: var(--mio-misty-purple); }
+  .dark  { background: var(--mio-deep-gray); }
+  .cap { font-family: var(--font-mono); font-size: 10px; color: var(--fg-muted); letter-spacing: 0.04em; text-align: center; }
+  .concept { display: flex; gap: 14px; align-items: center; font-family: var(--font-display); font-size: 13px; color: var(--fg-muted); font-style: italic; }
+  .concept b { color: var(--fg); font-style: normal; font-family: var(--font-cjk); letter-spacing: 0.15em; }
+</style></head>
+<body>
+<div class="card">
+  <div class="row between center-x">
+    <div class="label">Brand Mark · 0 + 7</div>
+    <div class="concept"><b>柔 × 剛</b> — round "0" capsule meets blade-cut "7"</div>
+  </div>
+  <div class="grid">
+    <div class="col gap-2"><div class="frame light"><img src="../assets/logos/logo_mark.svg"></div><span class="cap">misty purple / on white</span></div>
+    <div class="col gap-2"><div class="frame purple"><img src="../assets/logos/logo_mark_white.svg"></div><span class="cap">white / on purple</span></div>
+    <div class="col gap-2"><div class="frame dark"><img src="../assets/logos/logo_mark_white.svg"></div><span class="cap">white / on deep gray</span></div>
+  </div>
+</div>
+</body></html>

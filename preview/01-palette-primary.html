@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Brand Palette · Primary</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { padding: 24px 28px; gap: 14px; }
+  .swatches { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; flex: 1; }
+  .sw {
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    border: 1px solid var(--line);
+  }
+  .sw .name { font-family: var(--font-display); font-size: 17px; letter-spacing: 0.02em; line-height: 1.1; }
+  .sw .zh { font-family: var(--font-cjk); font-size: 13px; opacity: 0.85; letter-spacing: 0.18em; margin-top: 2px; }
+  .sw .hex { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.05em; }
+  .sw .pantone { font-family: var(--font-mono); font-size: 10.5px; opacity: 0.75; letter-spacing: 0.05em; }
+  .sw.on-light { color: var(--mio-deep-gray); }
+  .sw.on-dark { color: var(--mio-white); }
+</style></head>
+<body>
+<div class="card">
+  <div class="row between center-x">
+    <div class="label">Brand Palette · Primary</div>
+    <div class="mono">6 core colours · low-saturation system</div>
+  </div>
+  <div class="swatches">
+    <div class="sw on-light" style="background:#B8B4C6">
+      <div>
+        <div class="name">Misty Silver Purple</div>
+        <div class="zh">霧銀紫 · PRIMARY</div>
+      </div>
+      <div class="col gap-2">
+        <span class="hex">#B8B4C6</span>
+        <span class="pantone">PANTONE 5295 C</span>
+      </div>
+    </div>
+    <div class="sw on-light" style="background:#E6D8E9">
+      <div>
+        <div class="name">Soft Lavender</div>
+        <div class="zh">霧粉紫 · GRADIENT</div>
+      </div>
+      <div class="col gap-2">
+        <span class="hex">#E6D8E9</span>
+        <span class="pantone">PANTONE 524 C</span>
+      </div>
+    </div>
+    <div class="sw on-light" style="background:#F6F7F9; border-color:var(--line-strong)">
+      <div>
+        <div class="name">Pure White</div>
+        <div class="zh">露白 · CANVAS</div>
+      </div>
+      <div class="col gap-2">
+        <span class="hex">#F6F7F9</span>
+        <span class="pantone">PANTONE Cool Gray 1 C</span>
+      </div>
+    </div>
+    <div class="sw on-light" style="background:#6BCFFF">
+      <div>
+        <div class="name">Cool Blue</div>
+        <div class="zh">冷光藍 · ACCENT</div>
+      </div>
+      <div class="col gap-2">
+        <span class="hex">#6BCFFF</span>
+        <span class="pantone">PANTONE 2915 C</span>
+      </div>
+    </div>
+    <div class="sw on-light" style="background:#D4FF6A">
+      <div>
+        <div class="name">Lime Green</div>
+        <div class="zh">冷檸綠 · LIMITED</div>
+      </div>
+      <div class="col gap-2">
+        <span class="hex">#D4FF6A</span>
+        <span class="pantone">PANTONE 2297 C</span>
+      </div>
+    </div>
+    <div class="sw on-dark" style="background:#3A3A3F">
+      <div>
+        <div class="name">Deep Gray</div>
+        <div class="zh">深灰 · TEXT</div>
+      </div>
+      <div class="col gap-2">
+        <span class="hex">#3A3A3F</span>
+        <span class="pantone">PANTONE Black 7 C</span>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

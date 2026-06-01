@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Gradients</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { gap: 14px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; flex: 1; }
+  .grad { border-radius: 14px; min-height: 180px; padding: 14px 18px; display: flex; flex-direction: column; justify-content: space-between; color: var(--mio-deep-gray); }
+  .grad.on-dark { color: var(--mio-white); }
+  .grad .name { font-family: var(--font-display); font-size: 16px; letter-spacing: 0.04em; }
+  .grad .stops { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.04em; opacity: 0.85; }
+  .grad.mist { background: linear-gradient(135deg, #E6D8E9 0%, #B8B4C6 55%, #9A95AB 100%); }
+  .grad.mist-soft { background: linear-gradient(180deg, #F6F7F9 0%, #E6D8E9 100%); }
+  .grad.cool { background: linear-gradient(135deg, #B8B4C6 0%, #6BCFFF 100%); }
+  .grad.haze { background: radial-gradient(120% 90% at 20% 0%, #E6D8E9 0%, #F6F7F9 60%, #B8B4C6 120%); }
+  .grad.deep { background: linear-gradient(140deg, #5E5872 0%, #2C2935 100%); }
+  .grad.limited { background: linear-gradient(135deg, #D4FF6A 0%, #B8B4C6 100%); }
+</style></head>
+<body>
+<div class="card">
+  <div class="row between center-x">
+    <div class="label">Signature Gradients</div>
+    <div class="mono">--gradient-mist is the workhorse hero</div>
+  </div>
+  <div class="grid">
+    <div class="grad mist on-dark">
+      <div class="name">Mist</div>
+      <div class="col gap-2"><span class="stops">--gradient-mist</span><span class="stops">#E6D8E9 → #B8B4C6 → #9A95AB</span></div>
+    </div>
+    <div class="grad mist-soft">
+      <div class="name">Mist Soft</div>
+      <div class="col gap-2"><span class="stops">--gradient-mist-soft</span><span class="stops">#F6F7F9 → #E6D8E9</span></div>
+    </div>
+    <div class="grad cool on-dark">
+      <div class="name">Cool</div>
+      <div class="col gap-2"><span class="stops">--gradient-cool</span><span class="stops">#B8B4C6 → #6BCFFF</span></div>
+    </div>
+    <div class="grad haze">
+      <div class="name">Haze</div>
+      <div class="col gap-2"><span class="stops">--gradient-haze</span><span class="stops">radial · lavender → white → purple</span></div>
+    </div>
+    <div class="grad deep on-dark">
+      <div class="name">Deep Mist</div>
+      <div class="col gap-2"><span class="stops">night surface</span><span class="stops">#5E5872 → #2C2935</span></div>
+    </div>
+    <div class="grad limited">
+      <div class="name">Limited</div>
+      <div class="col gap-2"><span class="stops">seasonal only</span><span class="stops">#D4FF6A → #B8B4C6</span></div>
+    </div>
+  </div>
+</div>
+</body></html>

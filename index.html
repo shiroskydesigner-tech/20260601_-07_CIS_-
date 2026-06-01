@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#E6D8E9">
+<title>MIO7 · 澪柒 · Corporate Identity System</title>
+<meta name="description" content="MIO7 澪柒 — 7 BASE TEA FORMULA · 品牌識別系統 (CIS) 完整指南。色彩、字體、Logo、輔助圖形、產品系統與資源下載。">
+<link rel="icon" type="image/svg+xml" href="assets/logos/logo_mark.svg">
+
+<link rel="stylesheet" href="colors_and_type.css">
+<link rel="stylesheet" href="cis-site.css">
+</head>
+<body>
+
+<!-- Ambient floating orbs (background) -->
+<div class="ambient" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Top Navigation -->
+<header class="nav" role="banner">
+  <a href="#hero" class="nav__brand" aria-label="MIO7 home">
+    <svg class="nav__mark" viewBox="0 0 296.12 296.12" fill="currentColor" aria-hidden="true">
+      <polygon points="152.48 77.29 152.48 218.83 152.48 218.83 205.56 77.29 205.56 77.29 152.48 77.29 152.48 77.29"></polygon>
+      <path d="M117.1,77.29h0c-14.66,0-26.54,11.88-26.54,26.54v88.46c0,14.66,11.88,26.54,26.54,26.54s26.54-11.88,26.54-26.54v-88.46c0-14.66-11.88-26.54-26.54-26.54Z"></path>
+    </svg>
+    <span class="nav__name">M I O <span class="wm-num">7</span></span>
+  </a>
+  <nav aria-label="Main">
+    <ul class="nav__menu" id="navMenu"><!-- populated by JS --></ul>
+  </nav>
+  <div class="nav__meta" id="navMeta"><!-- populated by JS --></div>
+</header>
+
+<!-- ────────────────────────────────────────────────────────────── -->
+<!--  HERO                                                          -->
+<!-- ────────────────────────────────────────────────────────────── -->
+<section class="hero" id="hero">
+  <div class="hero__meta-top">
+    <span id="heroMetaLeft"></span>
+    <span id="heroMetaRight"></span>
+  </div>
+
+  <div class="hero__orbit" aria-hidden="true">
+    <svg class="hero__orbit-mark" viewBox="0 0 296.12 296.12" fill="currentColor">
+      <polygon points="152.48 77.29 152.48 218.83 152.48 218.83 205.56 77.29 205.56 77.29 152.48 77.29 152.48 77.29"></polygon>
+      <path d="M117.1,77.29h0c-14.66,0-26.54,11.88-26.54,26.54v88.46c0,14.66,11.88,26.54,26.54,26.54s26.54-11.88,26.54-26.54v-88.46c0-14.66-11.88-26.54-26.54-26.54Z"></path>
+    </svg>
+  </div>
+
+  <div class="hero__core">
+    <div class="hero__cjk reveal" id="heroCjk"></div>
+    <div class="hero__wordmark reveal" data-delay="1" id="heroWordmark"></div>
+    <div class="hero__subtitle reveal" data-delay="2" id="heroSubtitle"></div>
+    <div class="hero__slogan reveal" data-delay="3">
+      <div class="hero__slogan-zh" id="heroSloganZh"></div>
+      <div class="hero__slogan-en" id="heroSloganEn"></div>
+    </div>
+  </div>
+
+  <div class="hero__footer">
+    <div class="hero__scroll">SCROLL · 下滑探索</div>
+    <div class="hero__credit" id="heroCredit"></div>
+  </div>
+</section>
+
+<!-- ────────────────────────────────────────────────────────────── -->
+<!--  BRAND CORE · 品牌核心                                          -->
+<!-- ────────────────────────────────────────────────────────────── -->
+<section class="section" id="core">
+  <div class="section__overline reveal">01 · BRAND CORE</div>
+  <h2 class="section__title reveal" data-delay="1">命名邏輯 · <em>The Name</em></h2>
+  <p class="section__lead reveal" data-delay="2" id="coreLead"></p>
+
+  <!-- Story 3-card grid -->
+  <div class="story-grid" id="storyGrid"></div>
+
+  <!-- Logo concept dialogue -->
+  <div class="section__overline reveal">02 · LOGO SYSTEM</div>
+  <h2 class="section__title reveal" data-delay="1">標誌系統 · <em>The Mark</em></h2>
+
+  <div class="dialogue reveal" data-delay="2">
+    <div class="dialogue__concept">
+      <h3 class="dialogue__title" id="logoConceptTitle"></h3>
+      <p class="dialogue__desc" id="logoConceptDesc"></p>
+    </div>
+    <div class="dialogue__principles" id="logoPrinciples"></div>
+  </div>
+
+  <!-- Logo Genesis · 設計來由 -->
+  <section class="genesis" id="logoGenesis" aria-label="Logo Genesis"></section>
+
+  <!-- Logo variants -->
+  <div class="logo-grid" id="logoGrid"></div>
+
+  <!-- Auxiliary graphics -->
+  <div class="section__overline reveal" style="margin-top: 64px;">03 · AUXILIARY GRAPHICS</div>
+  <h2 class="section__title reveal" data-delay="1">輔助圖形 · <em>Geometry</em></h2>
+  <p class="section__lead reveal" data-delay="2">
+     高科技簡約質感，用線條幾何說話。
+  </p>
+  <div class="aux-row" id="auxRow"></div>
+</section>
+
+<!-- ────────────────────────────────────────────────────────────── -->
+<!--  VISUAL SYSTEM · 視覺規範                                       -->
+<!-- ────────────────────────────────────────────────────────────── -->
+<section class="section" id="system">
+  <div class="section__overline reveal">04 · COLOR PALETTE</div>
+  <h2 class="section__title reveal" data-delay="1">色彩系統 · <em>The Palette</em></h2>
+  <p class="section__lead reveal" data-delay="2">
+    六色品牌色票 — 全系統刻意低彩度，以霧粉紫 #E6D8E9 為主軸，霧銀紫 #B8B4C6 漸層伴生，冷光藍作為唯一的點綴。
+  </p>
+
+  <div class="color-grid" id="colorGrid"></div>
+
+  <!-- Tonal scale -->
+  <div class="section__overline reveal">05 · TONAL SCALE</div>
+  <h2 class="section__title reveal" data-delay="1">階調延伸 · <em>Tonal Scale</em></h2>
+  <p class="section__lead reveal" data-delay="2">
+    從 purple-50 到 purple-900，10 級階調 — 涵蓋背景、表面、線條、文字的全部需求。
+  </p>
+  <div class="tonal-strip reveal" data-delay="3" id="tonalStrip"></div>
+
+  <!-- Gradients -->
+  <div class="section__overline reveal" style="margin-top: 64px;">06 · GRADIENTS</div>
+  <h2 class="section__title reveal" data-delay="1">品牌漸層 · <em>Mist Gradients</em></h2>
+  <div class="gradient-grid" id="gradientGrid"></div>
+
+  <!-- Typography -->
+  <div class="section__overline reveal">07 · TYPOGRAPHY</div>
+  <h2 class="section__title reveal" data-delay="1">字體系統 · <em>The Type</em></h2>
+  <p class="section__lead reveal" data-delay="2">
+    雙語並陳，襯線 × 黑體交織 — Cormorant Garamond 與思源黑體並肩，攜手構築品牌的清爽聲線。
+  </p>
+
+  <div class="type-grid">
+    <div class="type-card reveal">
+      <div class="type-card__label">Latin · 拉丁字</div>
+      <div class="type-card__specimen type-card__specimen--latin" id="latinSpecimen"></div>
+      <div class="type-card__sub type-card__sub--latin" id="latinSpecimenSub"></div>
+      <div class="type-card__family" id="latinFamily"></div>
+      <div class="type-card__fallback" id="latinFallback"></div>
+      <div class="type-card__weights" id="latinWeights"></div>
+      <p class="type-card__note" id="latinNote"></p>
+    </div>
+
+    <div class="type-card reveal" data-delay="1">
+      <div class="type-card__label">CJK · 中文字</div>
+      <div class="type-card__specimen type-card__specimen--cjk" id="cjkSpecimen"></div>
+      <div class="type-card__sub type-card__sub--cjk" id="cjkSpecimenSub"></div>
+      <div class="type-card__family" id="cjkFamily"></div>
+      <div class="type-card__fallback" id="cjkFallback"></div>
+      <div class="type-card__weights" id="cjkWeights"></div>
+      <p class="type-card__note" id="cjkNote"></p>
+    </div>
+  </div>
+
+  <!-- Type scale -->
+  <div class="section__overline reveal" style="margin-top: 64px;">08 · TYPE SCALE</div>
+  <h2 class="section__title reveal" data-delay="1">字級階梯 · <em>Scale</em></h2>
+  <div id="typeScaleList" class="reveal" data-delay="2"></div>
+
+  <!-- Tracking -->
+  <div class="section__overline reveal" style="margin-top: 64px;">09 · LETTER SPACING</div>
+  <h2 class="section__title reveal" data-delay="1">字距規範 · <em>Tracking</em></h2>
+  <p class="section__lead reveal" data-delay="2">
+    Wide tracking 是 MIO7 的視覺指紋 — 三檔字距，三種場景，缺一不可。
+  </p>
+  <div class="tracking-demo" id="trackingDemo"></div>
+</section>
+
+<!-- ────────────────────────────────────────────────────────────── -->
+<!--  PACKAGING · 產品介紹                                            -->
+<!-- ────────────────────────────────────────────────────────────── -->
+<section class="section section--packaging" id="packaging">
+  <div class="section__overline reveal">10 · PACKAGING</div>
+  <h2 class="section__title reveal" data-delay="1">產品介紹 · <em>Product</em></h2>
+  <p class="section__lead reveal" data-delay="2">
+    霧銀紫鍍鉑紙杯 ── 一面留白只給品牌主張，一面交給「0／7」幾何切面承載辨識。
+  </p>
+
+  <div class="packaging-stage">
+    <figure class="packaging-stage__item reveal" data-delay="1">
+      <img src="assets/Product/20260531_品牌手冊-18.jpg"
+           alt="MIO7 paper cup — 7 BASE TEA FORMULA front + 0/7 cut graphic back"
+           loading="lazy">
+      <figcaption>
+        <span class="packaging-stage__num">01</span>
+        <span class="packaging-stage__zh">7 BASE TEA FORMULA · 主視覺杯</span>
+        <span class="packaging-stage__en">PRIMARY CUP · ALWAYS ON YOUR MIND</span>
+      </figcaption>
+    </figure>
+    <figure class="packaging-stage__item reveal" data-delay="2">
+      <img src="assets/Product/20260531_品牌手冊-19.jpg"
+           alt="MIO7 paper cup — wave pattern side + logo mark front"
+           loading="lazy">
+      <figcaption>
+        <span class="packaging-stage__num">02</span>
+        <span class="packaging-stage__zh">霧紋波線 · 副視覺杯</span>
+        <span class="packaging-stage__en">SECONDARY CUP · MIST WAVES</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ────────────────────────────────────────────────────────────── -->
+<!--  PRODUCT SYSTEM · 產品系統                                      -->
+<!-- ────────────────────────────────────────────────────────────── -->
+<section class="section" id="product">
+  <div class="section__overline reveal">11 · 7 BASE TEAS</div>
+  <h2 class="section__title reveal" data-delay="1">柒款基底 · <em>Seven Souls</em></h2>
+  <p class="section__lead reveal" data-delay="2">
+    從澪·壹到澪·柒 — 七支手選基底茶，每一支都用一個英文意境詞重塑名字。不譯，是重寫。
+  </p>
+
+  <div class="tea-grid" id="teaGrid"></div>
+
+  <!-- UI components -->
+  <div class="section__overline reveal">12 · UI ELEMENTS</div>
+  <h2 class="section__title reveal" data-delay="1">介面元件 · <em>UI System</em></h2>
+  <p class="section__lead reveal" data-delay="2">
+    按鈕、毛玻璃、冷光焦點、霧紫底線 — 四組品牌核心互動構件。
+  </p>
+
+  <!-- Button System Showcase -->
+  <div class="button-showcase reveal">
+    <div class="button-showcase__title">BUTTONS · PILL <span>(ECHOES "0" CAPSULE)</span></div>
+
+    <div class="button-showcase__group">
+      <div class="button-showcase__label">primary / ghost / dark / accent / lime</div>
+      <div class="button-showcase__row">
+        <button class="btn">ORDER NOW</button>
+        <button class="btn btn--ghost">FIND A STORE</button>
+        <button class="btn btn--dark">SIGN IN</button>
+        <button class="btn btn--accent">LIMITED DROP</button>
+        <button class="btn btn--lime">SEASONAL</button>
+      </div>
+    </div>
+
+    <div class="button-showcase__group">
+      <div class="button-showcase__label">size · sm / default / lg</div>
+      <div class="button-showcase__row">
+        <button class="btn btn--sm">ADD</button>
+        <button class="btn">ADD TO CART</button>
+        <button class="btn btn--lg">ADD TO CART</button>
+      </div>
+    </div>
+
+    <div class="button-showcase__group">
+      <div class="button-showcase__label">disabled</div>
+      <div class="button-showcase__row">
+        <button class="btn" disabled>SOLD OUT</button>
+        <button class="btn btn--ghost" disabled>COMING SOON</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="ui-grid">
+    <div class="ui-card reveal" data-delay="1">
+      <div class="ui-card__demo">
+        <div class="demo-frosted">
+          <div class="demo-frosted__glass">M I S T</div>
+        </div>
+      </div>
+      <div class="ui-card__info">
+        <div class="ui-card__name">毛玻璃卡片</div>
+        <div class="ui-card__name-en">Frosted Card</div>
+        <div class="ui-card__desc">backdrop-filter blur 20px，疊在霧紫底上 ── 如同清晨霧氣後的物件輪廓。</div>
+      </div>
+    </div>
+
+    <div class="ui-card reveal" data-delay="2">
+      <div class="ui-card__demo">
+        <div class="demo-focus">FOCUSED INPUT</div>
+      </div>
+      <div class="ui-card__info">
+        <div class="ui-card__name">冷光焦點環</div>
+        <div class="ui-card__name-en">Cool Focus Ring</div>
+        <div class="ui-card__desc">聚焦態使用冷光藍 #6BCFFF ── 唯一允許的霓虹瞬間。</div>
+      </div>
+    </div>
+
+    <div class="ui-card reveal" data-delay="3">
+      <div class="ui-card__demo">
+        <a href="#" class="demo-link" onclick="event.preventDefault()">DISCOVER MORE</a>
+      </div>
+      <div class="ui-card__info">
+        <div class="ui-card__name">Hover 底線</div>
+        <div class="ui-card__name-en">Hover Underline</div>
+        <div class="ui-card__desc">連結 hover 由左至右展開 ── ease-soft 280ms 的呼吸感，非彈跳。</div>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+──────────────────────────────────────────────────────────────
+<!--  RESOURCES · 資源下載                                           -->
+<!-- ────────────────────────────────────────────────────────────── -->
+<section class="section" id="resources">
+  <div class="section__overline reveal">13 · DOWNLOADS</div>
+  <h2 class="section__title reveal" data-delay="1">資源下載 · <em>Resources</em></h2>
+  <p class="section__lead reveal" data-delay="2">
+    完整品牌資產 — Logo 矢量檔、品牌手冊、字型、設計變數。
+  </p>
+
+  <div class="resource-grid" id="resourceGrid"></div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer__wordmark">M I O <span class="wm-num">7</span></div>
+  <div class="footer__tagline" id="footerTagline"></div>
+  <div class="footer__zh" id="footerZh"></div>
+  <div class="footer__meta" id="footerMeta"></div>
+</footer>
+
+<script src="cis-app.js" defer></script>
+</body>
+</html>

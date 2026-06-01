@@ -1,0 +1,372 @@
+/* ──────────────────────────────────────────────────────────────
+ * MIO7 · 澪柒  — colors_and_type.css
+ * Brand: 7 Base Tea Formula · Always On Your Mind
+ * Source of truth: uploads/brand_manual.pdf, uploads/brand_plan.pdf
+ * ──────────────────────────────────────────────────────────── */
+
+/* ── Webfont stack ───────────────────────────────────────────── */
+/* Latin display: Cormorant Garamond — local brand files (≈ TeX Gyre Pagella)
+ *   The brand spec calls for TeX Gyre Pagella; Cormorant Garamond is the
+ *   shipped working file. If Pagella is ever licensed, swap the @font-face
+ *   src entries below.
+ * CJK display + body + ceremonial: 思源黑體 Source Han Sans TW (self-hosted VF).
+ *   The brand CJK face is the SANS (思源黑體), self-hosted variable font.
+ *   No CDN substitute is loaded for CJK.
+ * UI / body Latin: Cormorant Garamond — per brand instruction ALL English
+ *   text (display, headings, body, UI, captions) is set in Cormorant. Inter
+ *   has been fully retired from the system.
+ *
+ * No CDN/web-font @import remains — every face (Cormorant Garamond + Source
+ * Han Serif TW) is self-hosted from /fonts, so nothing falls back to a
+ * substitute web font.
+ */
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/CormorantGaramond-Light.ttf") format("truetype");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/CormorantGaramond-LightItalic.ttf") format("truetype");
+  font-weight: 300; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/CormorantGaramond-Italic.ttf") format("truetype");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/CormorantGaramond-Medium.ttf") format("truetype");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/CormorantGaramond-MediumItalic.ttf") format("truetype");
+  font-weight: 500; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/CormorantGaramond-SemiBold.ttf") format("truetype");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/CormorantGaramond-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/CormorantGaramond-Bold.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/CormorantGaramond-BoldItalic.ttf") format("truetype");
+  font-weight: 700; font-style: italic; font-display: swap;
+}
+/* Real Regular cut now shipped — 400 normal maps to its own file (was bridged to Medium) */
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("fonts/CormorantGaramond-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
+/* Source Han Sans TW · 思源黑體 — BRAND-SPECIFIED CJK family (self-hosted VF)
+ * The brand manual names 思源黑體 (Source Han SANS) as the CJK display + body
+ * face. The user has now supplied it as a variable font; it is the PRIMARY
+ * CJK family (--font-cjk). One @font-face covers the full 300–900 axis. */
+@font-face {
+  font-family: "Source Han Sans TW";
+  src: url("fonts/SourceHanSansTW-VF.ttf") format("truetype-variations");
+  font-weight: 300 900; font-style: normal; font-display: swap;
+}
+
+/* Source Han Serif TW · 思源宋體 — ARCHIVED (not the active face). The brand
+ * CJK face is 思源黑體 (Source Han SANS, below). These serif @font-face cuts are
+ * left wired but unreferenced by any token, so nothing renders in serif unless
+ * a caller explicitly asks for "Source Han Serif TW". */
+@font-face {
+  font-family: "Source Han Serif TW";
+  src: url("fonts/SourceHanSerifTW-Light.otf") format("opentype");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Source Han Serif TW";
+  src: url("fonts/SourceHanSerifTW-Regular.otf") format("opentype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Source Han Serif TW";
+  src: url("fonts/SourceHanSerifTW-Medium.otf") format("opentype");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Source Han Serif TW";
+  src: url("fonts/SourceHanSerifTW-Heavy.otf") format("opentype");
+  font-weight: 700 900; font-style: normal; font-display: swap;
+}
+
+/* ── Global figure style ─────────────────────────────────────
+ * Cormorant Garamond ships old-style figures by default, where 7/3/4/5/9
+ * drop below the baseline. Force LINING (cap-height) numerals everywhere so
+ * digits like the brand "7" sit on the baseline. font-variant-numeric is an
+ * inherited property, so setting it on :root cascades to all text; the
+ * universal selector guards against form-control resets. */
+:root,
+*, *::before, *::after {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1, "tnum" 0;
+}
+
+:root {
+  /* ── Brand palette (from 識別色票) ─────────────────────────── */
+  --mio-misty-purple: #B8B4C6;     /* 霧銀紫  Misty Silver Purple · PRIMARY */
+  --mio-soft-lavender: #E6D8E9;    /* 霧粉紫  Soft Lavender · gradient/secondary */
+  --mio-white: #F6F7F9;            /* 露白    Pure White · canvas */
+  --mio-cool-blue: #6BCFFF;        /* 冷光藍  Cool Blue · accent / "cold-light" */
+  --mio-lime: #D4FF6A;             /* 冷檸綠  Lime Green · seasonal LIMITED only */
+  --mio-deep-gray: #3A3A3F;        /* 深灰    Deep Gray · primary text */
+
+  /* Brand-manual also lists these as part of the secondary swatch grid */
+  --mio-pantone-524: #D1BAD6;      /* deeper lavender variant from PDF */
+
+  /* ── Tonal extensions (derived; for surfaces, lines, fades) ─ */
+  --mio-purple-50:  #F3F1F6;
+  --mio-purple-100: #E7E3EE;
+  --mio-purple-200: #D6D0DF;
+  --mio-purple-300: #B8B4C6;       /* = misty purple, primary */
+  --mio-purple-400: #9A95AB;
+  --mio-purple-500: #7C7691;
+  --mio-purple-600: #5E5872;
+  --mio-purple-700: #423E51;
+  --mio-purple-800: #2C2935;
+  --mio-purple-900: #1A1820;
+
+  --mio-gray-50:  #F6F7F9;         /* = pure white */
+  --mio-gray-100: #ECEDF1;
+  --mio-gray-200: #D9DBE3;
+  --mio-gray-300: #B8BAC4;
+  --mio-gray-400: #8A8C97;
+  --mio-gray-500: #5F616B;
+  --mio-gray-600: #46474F;
+  --mio-gray-700: #3A3A3F;         /* = deep gray, body */
+  --mio-gray-800: #25252A;
+  --mio-gray-900: #131316;
+
+  /* ── Semantic surface tokens ──────────────────────────────── */
+  --bg:          var(--mio-white);
+  --bg-elev-1:   #FFFFFF;
+  --bg-elev-2:   var(--mio-purple-50);
+  --bg-inverse:  var(--mio-purple-800);
+
+  --fg:          var(--mio-deep-gray);
+  --fg-muted:    var(--mio-gray-500);
+  --fg-subtle:   var(--mio-gray-400);
+  --fg-inverse:  var(--mio-white);
+  --fg-on-brand: var(--mio-white);
+
+  --brand:       var(--mio-misty-purple);
+  --brand-soft:  var(--mio-soft-lavender);
+  --brand-deep:  var(--mio-purple-600);
+  --accent:      var(--mio-cool-blue);
+  --accent-limited: var(--mio-lime);
+
+  --line:        rgba(58, 58, 63, 0.10);
+  --line-soft:   rgba(58, 58, 63, 0.06);
+  --line-strong: rgba(58, 58, 63, 0.22);
+
+  /* ── Signature gradients ──────────────────────────────────── */
+  --gradient-mist: linear-gradient(135deg, #E6D8E9 0%, #B8B4C6 55%, #9A95AB 100%);
+  --gradient-mist-soft: linear-gradient(180deg, #F6F7F9 0%, #E6D8E9 100%);
+  --gradient-cool: linear-gradient(135deg, #B8B4C6 0%, #6BCFFF 100%);
+  --gradient-haze: radial-gradient(120% 90% at 20% 0%, #E6D8E9 0%, #F6F7F9 60%, #B8B4C6 120%);
+
+  /* ── Type families ────────────────────────────────────────── */
+  /* Display (Latin) — used for "MIO7", "ALWAYS ON YOUR MIND", taglines */
+  --font-display: "Cormorant Garamond", "TeX Gyre Pagella", "Palatino Linotype", Palatino, "Iowan Old Style", Georgia, serif;
+  /* CJK body + display — brand-specified 思源黑體 Source Han Sans TW (local VF).
+   * Primary CJK family per the brand instruction. System PingFang TC /
+   * JhengHei kept only as last-resort fallbacks. */
+  --font-cjk: "Source Han Sans TW", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  /* CJK ceremonial slot — also 思源黑體 (Source Han Sans), high-tracking
+   * packaging-grade lockups (澪·壹 etc.). */
+  --font-cjk-serif: "Source Han Sans TW", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  /* UI / body Latin — Cormorant Garamond per brand instruction (Inter retired).
+   * Kept as a distinct token so callers reading --font-ui still resolve to the
+   * brand serif; identical stack to --font-display. */
+  --font-ui: "Cormorant Garamond", "TeX Gyre Pagella", "Palatino Linotype", Palatino, "Iowan Old Style", Georgia, serif;
+  /* Mono — small system labels */
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ── Type scale ───────────────────────────────────────────── */
+  --fs-display: clamp(56px, 9vw, 120px);
+  --fs-h1: clamp(40px, 5vw, 72px);
+  --fs-h2: clamp(28px, 3.4vw, 48px);
+  --fs-h3: clamp(22px, 2.2vw, 32px);
+  --fs-h4: 20px;
+  --fs-body-lg: 18px;
+  --fs-body: 16px;
+  --fs-sm: 14px;
+  --fs-xs: 12px;
+  --fs-overline: 11px;
+
+  --lh-tight: 1.05;
+  --lh-snug:  1.2;
+  --lh-body:  1.55;
+  --lh-loose: 1.75;
+
+  /* Signature wide tracking on Latin caps — see "M I O 7" wordmark.
+     Use sparingly: only on headlines, taglines, navigation. */
+  --tracking-airy:  0.18em;   /* "MIO7" */
+  --tracking-wide:  0.32em;   /* "A L W A Y S O N Y O U R M I N D" */
+  --tracking-ultra: 0.45em;   /* CJK ceremonial (澪 柒) */
+  --tracking-tight: -0.01em;
+
+  /* ── Spacing scale (4-pt grid) ────────────────────────────── */
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* ── Radii ────────────────────────────────────────────────── */
+  --radius-xs: 2px;
+  --radius-sm: 6px;
+  --radius-md: 12px;        /* default card */
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;     /* CTA buttons, capsule chips */
+
+  /* ── Elevation (low, hazy — never harsh) ──────────────────── */
+  --shadow-1: 0 1px 2px rgba(58, 58, 63, 0.04), 0 1px 1px rgba(58, 58, 63, 0.02);
+  --shadow-2: 0 6px 16px rgba(58, 58, 63, 0.06), 0 2px 4px rgba(58, 58, 63, 0.03);
+  --shadow-3: 0 18px 40px rgba(94, 88, 114, 0.10), 0 6px 12px rgba(94, 88, 114, 0.05);
+  --shadow-haze: 0 30px 80px rgba(184, 180, 198, 0.45);   /* misty glow */
+  --shadow-glow-blue: 0 0 0 1px rgba(107,207,255,0.35), 0 8px 30px rgba(107,207,255,0.25);
+
+  /* ── Motion ───────────────────────────────────────────────── */
+  --ease-out:    cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-soft:   cubic-bezier(0.32, 0.72, 0.27, 1);     /* signature: hazy settle */
+  --dur-fast:   140ms;
+  --dur-base:   240ms;
+  --dur-slow:   420ms;
+  --dur-amb:    900ms;       /* ambient / hero fades */
+}
+
+/* ── Element defaults ──────────────────────────────────────── */
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  /* Cormorant Garamond leads so Latin/English glyphs render in the brand
+     serif; Chinese characters (no Latin-serif coverage) fall through to
+     Source Han Sans. */
+  font-family: var(--font-display), var(--font-cjk);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  color: var(--fg);
+  font-weight: 500;
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  margin: 0;
+}
+h1, .h1 { font-size: var(--fs-h1); font-family: var(--font-display); font-weight: 400; letter-spacing: 0.02em; }
+h2, .h2 { font-size: var(--fs-h2); font-family: var(--font-display); font-weight: 400; letter-spacing: 0.02em; }
+h3, .h3 { font-size: var(--fs-h3); }
+h4, .h4 { font-size: var(--fs-h4); }
+
+p { margin: 0; }
+small, .text-sm { font-size: var(--fs-sm); }
+.text-xs { font-size: var(--fs-xs); }
+
+.display {
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
+  font-weight: 300;
+  line-height: var(--lh-tight);
+  letter-spacing: 0.02em;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-airy);
+  font-weight: 400;
+  text-transform: none;
+}
+
+.tagline-en {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tagline-zh {
+  font-family: var(--font-cjk);
+  letter-spacing: 0.15em;
+  font-weight: 300;
+}
+
+.overline {
+  font-size: var(--fs-overline);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  font-family: var(--font-display);
+}
+
+.muted     { color: var(--fg-muted); }
+.subtle    { color: var(--fg-subtle); }
+.on-brand  { color: var(--fg-on-brand); }
+
+/* CJK ceremonial — used for series naming (澪·壹, 澪·貳, …) */
+.cjk-ceremonial {
+  font-family: var(--font-cjk-serif);
+  letter-spacing: var(--tracking-ultra);
+  font-weight: 300;
+}
+
+/* Misty surface — recurring brand background motif (霧霾系) */
+.surface-mist {
+  background: var(--gradient-mist);
+  color: var(--fg-on-brand);
+}
+.surface-haze {
+  background: var(--gradient-haze);
+  color: var(--fg);
+}
+
+/* Default link */
+a {
+  color: var(--brand-deep);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  transition: color var(--dur-base) var(--ease-soft), border-color var(--dur-base) var(--ease-soft);
+}
+a:hover { color: var(--fg); border-color: var(--fg); }
+
+/* Focus — soft blue ring, never harsh */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+::selection {
+  background: var(--mio-soft-lavender);
+  color: var(--mio-purple-800);
+}

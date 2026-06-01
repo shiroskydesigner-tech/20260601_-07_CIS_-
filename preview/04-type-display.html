@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Type · Display</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { gap: 16px; justify-content: space-between; }
+  .display-line {
+    font-family: var(--font-display);
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    color: var(--fg);
+  }
+  .display-meta { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; color: var(--fg-muted); }
+  .h-line { font-family: var(--font-display); font-size: 36px; font-weight: 400; letter-spacing: 0.04em; line-height: 1.05; }
+</style></head>
+<body>
+<div class="card">
+  <div class="label">Display Serif · Cormorant Garamond <span style="opacity:0.6">(brand TTFs in /fonts · stand-in for TeX Gyre Pagella)</span></div>
+  <div class="col gap-3">
+    <div class="display-line">Always</div>
+    <div class="display-meta">96 / 100 · weight 300 · tracking 0.04em</div>
+  </div>
+  <div class="col gap-3">
+    <div class="h-line">A quiet, sensory tea</div>
+    <div class="display-meta">36 / 38 · weight 400 · tracking 0.04em — heading default</div>
+  </div>
+  <div class="col gap-3">
+    <div style="font-family:var(--font-display); font-size:22px; font-style:italic; font-weight:400; color:var(--fg-muted);">— always on your mind</div>
+    <div class="display-meta">22 · italic 400 — pull-quote attribution</div>
+  </div>
+</div>
+</body></html>

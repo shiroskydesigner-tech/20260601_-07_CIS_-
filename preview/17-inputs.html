@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Inputs</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { gap: 14px; padding: 24px 28px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field label { font-family: var(--font-display); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--fg-muted); }
+  .field input, .field select {
+    height: 44px; padding: 0 16px;
+    background: var(--mio-white);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    font-family: var(--font-ui); font-size: 15px; color: var(--fg);
+    transition: border-color 240ms cubic-bezier(0.32, 0.72, 0.27, 1), box-shadow 240ms cubic-bezier(0.32, 0.72, 0.27, 1);
+  }
+  .field input:focus, .field select:focus {
+    outline: none;
+    border-color: var(--mio-cool-blue);
+    box-shadow: 0 0 0 4px rgba(107, 207, 255, 0.15);
+  }
+  .field input::placeholder { color: var(--fg-subtle); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+</style></head>
+<body>
+<div class="card">
+  <div class="label">Form Inputs · Hairline Border, Cool-Blue Focus</div>
+  <div class="grid">
+    <div class="field">
+      <label>Your name</label>
+      <input type="text" placeholder="Linn Hsu">
+    </div>
+    <div class="field">
+      <label>Pickup store</label>
+      <select><option>高雄 · 鼓山旗艦店</option></select>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" placeholder="you@mio7.tea" autofocus>
+    </div>
+    <div class="field">
+      <label>Phone</label>
+      <input type="tel" placeholder="+886 9XX XXX XXX">
+    </div>
+  </div>
+</div>
+</body></html>

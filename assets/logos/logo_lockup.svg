@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.73 441.73">
+  <rect x="0" y="0" width="441.73" height="441.73" fill="#B8B4C6"></rect>
+  <g transform="translate(7.27 0)">
+    <polygon fill="#F6F7F9" points="217.92 115 217.92 256.54 271 115 217.92 115"></polygon>
+    <path fill="#F6F7F9" d="M182.54,115h0c-14.66,0-26.54,11.88-26.54,26.54v88.46c0,14.66,11.88,26.54,26.54,26.54s26.54-11.88,26.54-26.54v-88.46c0-14.66-11.88-26.54-26.54-26.54Z"></path>
+  </g>
+  <text x="220.86" y="325" fill="#F6F7F9" font-family="&#39;Cormorant Garamond&#39;,&#39;TeX Gyre Pagella&#39;,serif" font-size="42" font-weight="400" letter-spacing="7.56" text-anchor="middle" style="font-feature-settings:&#39;lnum&#39; 1, &#39;tnum&#39; 1; font-variant-numeric: lining-nums;">MIO7</text>
+</svg>

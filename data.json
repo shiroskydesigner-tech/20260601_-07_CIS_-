@@ -1,0 +1,489 @@
+{
+  "meta": {
+    "siteTitle": "MIO7 · 澪柒 · Corporate Identity System",
+    "siteDescription": "MIO7 澪柒 — 7 BASE TEA FORMULA · 品牌識別系統 (CIS) 完整指南",
+    "version": "v1.0",
+    "lastUpdated": "2026.05.28"
+  },
+
+  "brand": {
+    "nameZh": "澪柒",
+    "nameEn": "MIO7",
+    "subtitle": "7 BASE TEA FORMULA",
+    "sloganZh": "想喝的時候，就會想到",
+    "sloganEn": "ALWAYS ON YOUR MIND",
+    "city": "Kaohsiung",
+    "areaCode": "07",
+    "social": "@mio7_tea",
+    "audience": "25 ± 5 歲女性為核心 · 18 – 30 歲精品茶愛好者",
+    "style": "霧霾系科技感 · 低彩度幾何極簡",
+    "material": "啞光烤漆 · 灰紫水泥漆 · 拉絲鋼 · 冷藍光條"
+  },
+
+  "nav": [
+    { "id": "hero",      "labelZh": "首頁",     "labelEn": "Cover" },
+    { "id": "core",      "labelZh": "品牌核心", "labelEn": "Brand Core" },
+    { "id": "system",    "labelZh": "視覺規範", "labelEn": "Visual System" },
+    { "id": "product",   "labelZh": "產品系統", "labelEn": "Product System" },
+    { "id": "resources", "labelZh": "資源下載", "labelEn": "Resources" }
+  ],
+
+  "story": [
+    {
+      "char": "澪",
+      "pinyin": "MIO",
+      "subtitle": "清澈流動之水",
+      "subtitleEn": "Clear, flowing water",
+      "content": "「澪」意指清流、清澈的水脈──象徵品牌對純淨茶質的承諾。MIO 在義大利語中亦意為「我的」── 每一杯，都是專屬於你的瞬間。"
+    },
+    {
+      "char": "柒",
+      "pinyin": "QĪ",
+      "subtitle": "七的儀式體",
+      "subtitleEn": "Ceremonial seven",
+      "content": "「柒」是「七」的正式、儀式性寫法。錨定 7 款手選基底茶 ── 品牌的靈魂所在。每一支茶皆為精挑細選，無一冗餘。"
+    },
+    {
+      "char": "07",
+      "pinyin": "AREA CODE",
+      "subtitle": "高雄電話區碼",
+      "subtitleEn": "Kaohsiung dial code",
+      "content": "07 是高雄市的市話區碼，宣告品牌的在地起源。從南方海港城市出發，把港都的霧、光、海風都裝進每一杯茶裡。"
+    }
+  ],
+
+  "logoConcept": {
+    "title": "0 × 7 · 一場柔與剛的對話",
+    "titleEn": "Soft × Sharp · A Geometric Dialogue",
+    "description": "MIO7 logo 由一個圓潤膠囊的「0」與銳利刀鋒的「7」並置構成。Gestalt 完形原理讓觀者自動拼讀為「07」── 一個被刻意降彩度的霧銀紫識別，從高彩度飲品紅海中走出來，進入「霧霾系科技感」的女性設計新賽道。",
+    "principles": [
+      { "title": "柔 (Soft)", "subtitle": "The 0 capsule", "desc": "圓潤、平靜、可包容 — 象徵茶的溫潤與品牌的女性氣質。" },
+      { "title": "剛 (Sharp)", "subtitle": "The 7 blade", "desc": "銳利、果斷、有方向 — 象徵茶韻的清晰收尾與品牌的設計自覺。" },
+      { "title": "和 (Harmony)", "subtitle": "The 07 union", "desc": "兩者並置卻不對立，留出空白讓觀者完成識別 — 這是品牌與客戶的共同創作。" }
+    ]
+  },
+
+  "logoGenesis": {
+    "title": "設計來由",
+    "titleEn": "Logo Genesis",
+    "subtitle": "數字 07 的「初心」提取",
+    "subtitleEn": "Distilled from the numerals 0 + 7",
+    "story": [
+      "整體造型由圓潤的「0」與銳角切面的「7」構成，「柔 × 剛」的視覺對比，對應品牌在茶飲體驗中「溫潤口感」與「俐落層次」的雙重特性。",
+      "在構成上，兩者並未完整呈現數字，而是透過完形心理讓視覺自動補足「07」的辨識 ── 建立更高層次的設計記憶點，同時符合品牌「簡約幾何 × 輕科技感」的核心視覺策略。",
+      "整體色彩運用銀灰與霧感背景，降低飽和度，強化「霧霾系科技感」，使 LOGO 不落入傳統飲料品牌的高彩度競爭，而轉向更具質感與女性市場導向的視覺語言。",
+      "此 LOGO 不僅是數字符號，更是一個可延展的模組化視覺單位 ── 可應用於包裝切角、版面分割、動態識別與空間導視，形成完整且一致的品牌設計系統。"
+    ],
+    "concepts": [
+      {
+        "key": "zeros",
+        "title": "核心精選",
+        "subtitleEn": "Core Selection",
+        "desc": "兩個「0」並列 ── 從數字 07 中提取的「初心」原型。"
+      },
+      {
+        "key": "sevens",
+        "title": "核心靈魂",
+        "subtitleEn": "Soul of Brand",
+        "desc": "兩個「7」對位 ── 精心挑選七款基底茶的靈魂結構。"
+      },
+      {
+        "key": "zero-smile",
+        "title": "溫潤口感",
+        "subtitleEn": "Soft Taste",
+        "desc": "「0」的圓潤膠囊 ── 對應茶飲入口的柔順與溫潤。"
+      },
+      {
+        "key": "seven-levels",
+        "title": "俐落層次",
+        "subtitleEn": "Crisp Layers",
+        "desc": "「7」的銳角階梯 ── 對應茶韻收尾的清晰層次與餘味。"
+      }
+    ]
+  },
+
+  "logoVariants": [
+    {
+      "name": "Primary",
+      "nameEn": "Primary",
+      "file": "assets/logos/showcase/01-primary.svg",
+      "bg": "showcase"
+    },
+    {
+      "name": "Primary",
+      "nameEn": "Primary",
+      "file": "assets/logos/showcase/02-inverse.svg",
+      "bg": "showcase"
+    },
+    {
+      "name": "Secondary",
+      "nameEn": "Secondary",
+      "file": "assets/logos/showcase/03-mark.svg",
+      "bg": "showcase"
+    },
+    {
+      "name": "Secondary",
+      "nameEn": "Secondary",
+      "file": "assets/logos/showcase/04-square.svg",
+      "bg": "showcase"
+    }
+  ],
+
+  "auxiliaryGraphics": [
+    {
+      "name": "柒之列",
+      "nameEn": "Seven Fan",
+      "file": "assets/graphics/seven_fan_outline.svg",
+      "desc": "「7」並列構成的節奏感。"
+    },
+    {
+      "name": "柒鑽",
+      "nameEn": "Seven Diamond",
+      "file": "assets/graphics/seven_diamond_outline.svg",
+      "desc": "兩個「7」對位構成的鑽石稜面，輔助背景角落空白使用。"
+    },
+    {
+      "name": "雙澪 X",
+      "nameEn": "Aux Chevron",
+      "file": "assets/graphics/aux_chevron_outline.svg",
+      "desc": "兩道0交叉構成的 X 形，輔助背景角落空白使用。"
+    },
+    {
+      "name": "柒之列",
+      "nameEn": "Sevens Row",
+      "file": "assets/graphics/sevens_row.svg",
+      "desc": "「7」橫向重複構成的視覺帶，用於 banner、頁首頁尾節奏。"
+    },
+    {
+      "name": "澪之列",
+      "nameEn": "Zeroes Row",
+      "file": "assets/graphics/zeroes_row.svg",
+      "desc": "「0」橫向重複構成的視覺帶，用於 banner、頁首頁尾節奏。"
+    }
+  ],
+
+  "colors": [
+    {
+      "tokenZh": "霧粉紫",
+      "tokenEn": "Soft Lavender",
+      "hex": "#E6D8E9",
+      "cmyk": "C10 M18 Y5 K0",
+      "pantone": "524 C",
+      "role": "PRIMARY",
+      "usage": "品牌主色 ── 用於 logo、主視覺、識別系統核心"
+    },
+    {
+      "tokenZh": "霧銀紫",
+      "tokenEn": "Misty Silver Purple",
+      "hex": "#B8B4C6",
+      "cmyk": "C30 M28 Y15 K0",
+      "pantone": "5295 C",
+      "role": "SECONDARY",
+      "usage": "次要色、漸層深調、卡片邊光與輔助識別"
+    },
+    {
+      "tokenZh": "露白",
+      "tokenEn": "Pure White",
+      "hex": "#F6F7F9",
+      "cmyk": "C3 M2 Y2 K0",
+      "pantone": "Cool Gray 1 C",
+      "role": "CANVAS",
+      "usage": "畫布底色 ── 主背景、文字反白"
+    },
+    {
+      "tokenZh": "冷光藍",
+      "tokenEn": "Cool Blue",
+      "hex": "#6BCFFF",
+      "cmyk": "C55 M0 Y0 K0",
+      "pantone": "2915 C",
+      "role": "ACCENT",
+      "usage": "冷光點綴 ── 連結、focus、tech 時刻"
+    },
+    {
+      "tokenZh": "冷檸綠",
+      "tokenEn": "Lime Green",
+      "hex": "#D4FF6A",
+      "cmyk": "C20 M0 Y70 K0",
+      "pantone": "2297 C",
+      "role": "LIMITED",
+      "usage": "季節限定 / 新品標 ── 絕不作為常駐色面"
+    },
+    {
+      "tokenZh": "深灰",
+      "tokenEn": "Deep Gray",
+      "hex": "#3A3A3F",
+      "cmyk": "C70 M65 Y60 K65",
+      "pantone": "Black 7 C",
+      "role": "TEXT",
+      "usage": "正文文字 ── 純黑會過於沉重，故定 Black 7 C"
+    }
+  ],
+
+  "tonalScale": [
+    { "name": "purple-50",  "hex": "#F3F1F6" },
+    { "name": "purple-100", "hex": "#E7E3EE" },
+    { "name": "purple-200", "hex": "#D6D0DF" },
+    { "name": "purple-300", "hex": "#B8B4C6", "tag": "PRIMARY" },
+    { "name": "purple-400", "hex": "#9A95AB" },
+    { "name": "purple-500", "hex": "#7C7691" },
+    { "name": "purple-600", "hex": "#5E5872" },
+    { "name": "purple-700", "hex": "#423E51" },
+    { "name": "purple-800", "hex": "#2C2935" },
+    { "name": "purple-900", "hex": "#1A1820" }
+  ],
+
+  "gradients": [
+    {
+      "name": "霧光主漸層",
+      "nameEn": "Mist Gradient",
+      "css": "linear-gradient(135deg, #E6D8E9 0%, #B8B4C6 55%, #9A95AB 100%)",
+      "usage": "Hero 主視覺、品牌封面、海報主背景"
+    },
+    {
+      "name": "霧光柔漸層",
+      "nameEn": "Mist Soft",
+      "css": "linear-gradient(180deg, #F6F7F9 0%, #E6D8E9 100%)",
+      "usage": "卡片背景、段落淡出、軟分隔"
+    },
+    {
+      "name": "冷光橋接漸層",
+      "nameEn": "Cool Bridge",
+      "css": "linear-gradient(135deg, #B8B4C6 0%, #6BCFFF 100%)",
+      "usage": "科技時刻 — 数據視覺、focus 光、tech 過場"
+    },
+    {
+      "name": "霧霾光暈",
+      "nameEn": "Haze Radial",
+      "css": "radial-gradient(120% 90% at 20% 0%, #E6D8E9 0%, #F6F7F9 60%, #B8B4C6 120%)",
+      "usage": "氛圍光暈、英雄區光斑、深色背景上的呼吸光"
+    }
+  ],
+
+  "typography": {
+    "latin": {
+      "family": "Cormorant Garamond",
+      "fallback": "TeX Gyre Pagella · Palatino",
+      "specimen": "MIO7",
+      "specimenSub": "Always On Your Mind",
+      "weights": [300, 400, 500, 600, 700],
+      "note": "拉丁字唯一指定字體 ── 從大型展示、標題到 UI、內文、註解，全部使用 Cormorant Garamond。Inter 已正式退役。本機自架 9 個 weight + italic，共 10 個檔案。"
+    },
+    "cjk": {
+      "family": "Source Han Sans TW · 思源黑體",
+      "fallback": "PingFang TC · Microsoft JhengHei",
+      "specimen": "澪柒",
+      "specimenSub": "想喝的時候 就會想到",
+      "weights": [300, 400, 500, 700, 900],
+      "note": "中文唯一指定字體 ── 思源黑體，Adobe 與 Google 共同開發的開源繁體中文黑體。本機自架 Variable Font (300–900 連續軸)，不靠 CDN，離線可用。乾淨、現代、清爽。"
+    }
+  },
+
+  "typeScale": [
+    { "name": "Display",  "size": "120px",        "usage": "Hero MIO7 wordmark · 海報主標" },
+    { "name": "H1",       "size": "72px",         "usage": "段落主標題" },
+    { "name": "H2",       "size": "48px",         "usage": "次標題、區塊標" },
+    { "name": "H3",       "size": "32px",         "usage": "卡片標題、列表標" },
+    { "name": "H4",       "size": "20px",         "usage": "小型標題" },
+    { "name": "Body LG",  "size": "18px",         "usage": "重點段落、引言" },
+    { "name": "Body",     "size": "16px",         "usage": "正文預設" },
+    { "name": "Small",    "size": "14px",         "usage": "註解、輔助說明" },
+    { "name": "Overline", "size": "11px",         "usage": "標籤、上標 — 搭配 wide tracking" }
+  ],
+
+  "tracking": [
+    { "name": "Airy",  "value": "0.18em", "demo": "M I O 7",                                  "usage": "Wordmark 主標、Logo 文字" },
+    { "name": "Wide",  "value": "0.32em", "demo": "A L W A Y S  O N  Y O U R  M I N D",      "usage": "Tagline、英文 Slogan、Overline 標籤" },
+    { "name": "Ultra", "value": "0.45em", "demo": "澪 · 壹",                                  "usage": "中文儀式編號（澪·壹 ~ 澪·柒）、包裝印標" }
+  ],
+
+  "teas": [
+    {
+      "no": "壹",
+      "noEn": "01",
+      "nameZh": "初雪冬片",
+      "nameEn": "FIRST FROST",
+      "base": "冬片四季春",
+      "desc": "高冷山頭、凍葉清香，似初雪輕落葉緣。冷冽的香氣後韻帶著嫩芽的甘。",
+      "descEn": "Highland leaves picked at first cold — clear, bright, with a soft sweet finish."
+    },
+    {
+      "no": "貳",
+      "noEn": "02",
+      "nameZh": "金萱霧語",
+      "nameEn": "MIST OOLONG",
+      "base": "茉莉金萱",
+      "desc": "金萱奶香佐茉莉花瓣，霧裡有語，柔白如月。",
+      "descEn": "Milky Jin Xuan oolong threaded with jasmine — soft, white, lunar."
+    },
+    {
+      "no": "參",
+      "noEn": "03",
+      "nameZh": "凍頂冷焰",
+      "nameEn": "COLD FLAME",
+      "base": "凍頂烏龍",
+      "desc": "凍頂烏龍經中烘，焰香冷收，是矛盾中的和諧。",
+      "descEn": "Mid-roast Dong Ding oolong — fire-warmth with a cool collected finish."
+    },
+    {
+      "no": "肆",
+      "noEn": "04",
+      "nameZh": "蜜境烏龍",
+      "nameEn": "HONEY DRIFT",
+      "base": "蜜香烏龍",
+      "desc": "天然蜜甜，茶韻柔軟，漂浮蜜夢。Signature.",
+      "descEn": "Natural honey sweetness, soft tea finish — drifting honey dream."
+    },
+    {
+      "no": "伍",
+      "noEn": "05",
+      "nameZh": "肯亞赤道",
+      "nameEn": "EQUATOR RED",
+      "base": "肯亞紅茶",
+      "desc": "赤道日光下的高地紅茶，麥芽香、玫瑰尾韻。",
+      "descEn": "High-altitude Kenyan black tea — malt, rose, equatorial sun."
+    },
+    {
+      "no": "陸",
+      "noEn": "06",
+      "nameZh": "鐵音玄境",
+      "nameEn": "IRON ECHO",
+      "base": "鐵觀音",
+      "desc": "鐵觀音的礦感與蘭香在喉間迴盪，幽遠如玄境。",
+      "descEn": "Mineral Tieguanyin with orchid — an echo that lingers."
+    },
+    {
+      "no": "柒",
+      "noEn": "07",
+      "nameZh": "桂香蕎語",
+      "nameEn": "OSMANTHUS BUCKWHEAT",
+      "base": "桂花蕎麥茶",
+      "desc": "烘焙蕎麥的暖香佐桂花，無咖啡因的溫柔收尾。",
+      "descEn": "Toasted buckwheat with osmanthus — caffeine-free, warm, gentle."
+    }
+  ],
+
+  "uiComponents": [
+    {
+      "name": "Pill Button",
+      "nameZh": "膠囊按鈕",
+      "desc": "圓角 999px ── 呼應 logo「0」膠囊形態。預設外觀為霧紫，hover 加深而非變亮。"
+    },
+    {
+      "name": "Frosted Card",
+      "nameZh": "毛玻璃卡片",
+      "desc": "backdrop-filter blur 20px，70% 透明度疊在霧紫底上。如同清晨霧氣後的物件輪廓。"
+    },
+    {
+      "name": "Cool Focus Ring",
+      "nameZh": "冷光焦點環",
+      "desc": "聚焦態使用冷光藍 #6BCFFF 1px ring + 8px glow ── 唯一允許霓虹感的時刻。"
+    },
+    {
+      "name": "Hover Underline",
+      "nameZh": "Hover 底線",
+      "desc": "連結 hover 由左至右展開細線 ── ease-soft 240ms，呼吸感而非彈跳。"
+    }
+  ],
+
+  "resources": [
+    {
+      "name": "Brand Manual",
+      "nameZh": "品牌識別手冊",
+      "type": "PDF · 8 頁",
+      "file": "uploads/brand_manual.pdf",
+      "desc": "完整色票、字型樣本、輔助圖形規範",
+      "size": "773 KB"
+    },
+    {
+      "name": "Brand Plan",
+      "nameZh": "品牌企劃書",
+      "type": "PDF · 6 頁",
+      "file": "uploads/brand_plan.pdf",
+      "desc": "命名邏輯、產品線、市場定位完整提案",
+      "size": "559 KB"
+    },
+    {
+      "name": "Logo · Lockup (Light)",
+      "nameZh": "主標組合 · 淺底",
+      "type": "SVG",
+      "file": "assets/logos/logo_lockup.svg",
+      "desc": "白/淺底專用主標",
+      "size": "< 1 KB"
+    },
+    {
+      "name": "Logo · Lockup (Dark)",
+      "nameZh": "主標組合 · 深底",
+      "type": "SVG",
+      "file": "assets/logos/logo_lockup_inverse.svg",
+      "desc": "深色背景反白主標",
+      "size": "< 1 KB"
+    },
+    {
+      "name": "Logo · Mark",
+      "nameZh": "品牌印章",
+      "type": "SVG",
+      "file": "assets/logos/logo_mark.svg",
+      "desc": "小尺寸印章、favicon",
+      "size": "< 1 KB"
+    },
+    {
+      "name": "Logo · Square",
+      "nameZh": "正方品牌標",
+      "type": "SVG",
+      "file": "assets/logos/logo_full_square.svg",
+      "desc": "社群正方版位專用",
+      "size": "< 1 KB"
+    },
+    {
+      "name": "Aux Graphics Pack",
+      "nameZh": "輔助圖形組",
+      "type": "SVG · 21 files",
+      "file": "assets/graphics/",
+      "desc": "全套輔助幾何 — 柒之扇、柒鑽、雙刃 X、節奏列",
+      "size": "資料夾"
+    },
+    {
+      "name": "Cormorant Garamond",
+      "nameZh": "英文襯線字型",
+      "type": "TTF · 10 files",
+      "file": "fonts/",
+      "desc": "拉丁主字 — Light / Regular / Medium / SemiBold / Bold 共 5 weight 各含 Italic",
+      "size": "資料夾"
+    },
+    {
+      "name": "Source Han Sans TW VF",
+      "nameZh": "思源黑體 TW (本機)",
+      "type": "Variable TTF",
+      "file": "fonts/SourceHanSansTW-VF.ttf",
+      "desc": "中文主字 — 自架變數字型，300–900 連續字重軸",
+      "size": "單檔"
+    },
+    {
+      "name": "Design Tokens CSS",
+      "nameZh": "設計變數 CSS",
+      "type": "CSS",
+      "file": "colors_and_type.css",
+      "desc": "所有顏色 / 字級 / 間距 / 動畫變數",
+      "size": "13 KB"
+    }
+  ],
+
+  "rules": {
+    "do": [
+      { "title": "永遠低彩度", "desc": "霧銀紫 #B8B4C6 是品牌之魂，絕不替換為高彩度紫色 — 飽和度即背叛。" },
+      { "title": "雙語並陳",   "desc": "中文與英文皆為一等公民。英文是「詩意重塑」，非「翻譯」。例：蜜境烏龍 → HONEY DRIFT。" },
+      { "title": "氛圍勝過功能", "desc": "用天氣、光、礦物形容茶 — 不用「最好喝」「必喝」。FIRST FROST，不是 Winter Tea。" },
+      { "title": "幾何作為符號", "desc": "0 膠囊、7 刀鋒、X 雙刃 — 這就是品牌的全部圖形語彙。" },
+      { "title": "Wide tracking 拉丁大寫", "desc": "wordmark `0.18em`，tagline `0.32em`，包裝儀式編號 `0.45em`。" },
+      { "title": "霧光陰影",     "desc": "陰影帶霧銀紫色調，低透明度 — 是霧，不是強光。" }
+    ],
+    "dont": [
+      { "title": "禁用具象 icon", "desc": "茶葉、水滴、蒸氣雲、咖啡杯 — 這些是高彩度飲品市場的視覺套路，品牌刻意走向相反。" },
+      { "title": "禁止 emoji 進產品", "desc": "產品文案、菜單、UI 一律無 emoji。社群可有限度使用 ☁︎ ✦ 之類克制符號。" },
+      { "title": "禁用高彩度紫",  "desc": "鮮豔紫、桃紫、霓虹紫絕對禁止。霧銀紫 #B8B4C6 是唯一。" },
+      { "title": "禁用 bounce 動效", "desc": "spring、overshoot、彈跳 — 全部 off-brand。所有動作必須像霧氣一樣 glide。" },
+      { "title": "禁止厚重邊框",  "desc": "邊框永遠 1px hairline，rgba 10% 黑。粗線條過於武斷，違背品牌克制氣質。" },
+      { "title": "禁止「最」「第一」「唯一」", "desc": "比較級與最高級詞彙不使用。品牌不爭排名，只占據「想起」的瞬間。" }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Radii</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { gap: 14px; }
+  .row-r { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; flex: 1; align-items: end; }
+  .item { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+  .box { width: 100%; aspect-ratio: 1.1 / 1; background: var(--mio-soft-lavender); border: 1px solid var(--line); }
+  .item .name { font-family: var(--font-display); font-size: 14px; color: var(--fg); }
+  .item .spec { font-family: var(--font-mono); font-size: 10.5px; color: var(--fg-muted); }
+</style></head>
+<body>
+<div class="card">
+  <div class="row between center-x">
+    <div class="label">Corner Radii</div>
+    <div class="mono">12px = default card · 999 = pill (CTA, chip)</div>
+  </div>
+  <div class="row-r">
+    <div class="item"><div class="box" style="border-radius:2px"></div><span class="name">xs</span><span class="spec">2px</span></div>
+    <div class="item"><div class="box" style="border-radius:6px"></div><span class="name">sm</span><span class="spec">6px</span></div>
+    <div class="item"><div class="box" style="border-radius:12px"></div><span class="name">md</span><span class="spec">12px · default</span></div>
+    <div class="item"><div class="box" style="border-radius:20px"></div><span class="name">lg</span><span class="spec">20px</span></div>
+    <div class="item"><div class="box" style="border-radius:32px"></div><span class="name">xl</span><span class="spec">32px</span></div>
+    <div class="item"><div class="box" style="border-radius:999px"></div><span class="name">pill</span><span class="spec">999px</span></div>
+  </div>
+</div>
+</body></html>

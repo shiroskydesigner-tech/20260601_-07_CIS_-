@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Product Card</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  body { background: var(--mio-purple-50); }
+  .card { gap: 14px; padding: 24px 28px; align-items: stretch; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; flex: 1; }
+  .menu-card {
+    background: var(--mio-white);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: 0 6px 16px rgba(58,58,63,.06);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .menu-card::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    bottom: 18px;
+    height: 1px;
+    background: var(--mio-misty-purple);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.2s ease;
+  }
+  .menu-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(94, 88, 114, 0.12);
+  }
+  .menu-card:hover::before {
+    transform: scaleX(1);
+  }
+  .menu-card .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  .menu-card .series { font-family: var(--font-cjk); font-size: 13px; letter-spacing: 0.45em; color: var(--mio-purple-500); }
+  .menu-card .name-zh { font-family: var(--font-cjk); font-weight: 500; font-size: 22px; letter-spacing: 0.08em; margin-top: 4px; color: var(--fg); }
+  .menu-card .name-en { font-family: var(--font-display); font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--mio-purple-600); margin-top: 6px; }
+  .menu-card .desc { font-family: var(--font-cjk); font-size: 13px; line-height: 1.7; color: var(--fg-muted); }
+  .menu-card .price { font-family: var(--font-display); font-size: 24px; font-weight: 400; letter-spacing: 0.02em; color: var(--fg); }
+  .menu-card .price span { font-size: 12px; letter-spacing: 0.2em; opacity: 0.6; vertical-align: top; margin-right: 2px; }
+  .menu-card.signature::after {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #B8B4C6 0%, #E6D8E9 100%);
+  }
+  .badge {
+    align-self: flex-start;
+    font-family: var(--font-display); font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase;
+    background: var(--mio-soft-lavender); color: var(--mio-purple-700);
+    padding: 4px 10px; border-radius: 999px;
+  }
+  .badge.cool { background: var(--mio-lime); color: var(--mio-deep-gray); }
+  .footer { display: flex; align-items: center; justify-content: space-between; }
+</style></head>
+<body>
+<div class="card">
+  <div class="label">Menu Card · 澪·序列</div>
+  <div class="grid">
+    <div class="menu-card signature">
+      <div class="top">
+        <div>
+          <div class="series">澪·肆</div>
+          <div class="name-zh">蜜境烏龍</div>
+          <div class="name-en">HONEY DRIFT</div>
+        </div>
+        <span class="badge">Signature</span>
+      </div>
+      <div class="desc">天然蜜甜，茶韻柔軟，漂浮蜜夢。<br/>Natural honey sweetness, soft tea finish.</div>
+      <div class="footer"><span class="price"><span>NT$</span>85</span></div>
+    </div>
+    <div class="menu-card signature">
+      <div class="top">
+        <div>
+          <div class="series">蓋·壹</div>
+          <div class="name-zh">翡翠開心蓋</div>
+          <div class="name-en">PISTACHIO CROWN</div>
+        </div>
+        <span class="badge cool">New · 新品</span>
+      </div>
+      <div class="desc">開心果奶蓋，天然翠綠色澤。<br/>Pistachio cream cap — pure, vivid green.</div>
+      <div class="footer"><span class="price"><span>NT$</span>120</span></div>
+    </div>
+  </div>
+</div>
+</body></html>

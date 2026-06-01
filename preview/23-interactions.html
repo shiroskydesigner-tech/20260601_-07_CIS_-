@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Interactions</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { gap: 14px; padding: 24px 28px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .state {
+    border: 1px solid var(--line); border-radius: 14px; padding: 18px;
+    background: var(--bg-elev-1);
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .state .name { font-family: var(--font-display); font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--fg-muted); }
+  .demo {
+    height: 72px; border-radius: 12px; background: var(--mio-misty-purple);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--mio-white); font-family: var(--font-display); letter-spacing: 0.28em; text-transform: uppercase; font-size: 12px;
+    transition: all 240ms cubic-bezier(0.32, 0.72, 0.27, 1);
+  }
+  .state.rest .demo {}
+  .state.hover .demo { background: #9A95AB; }
+  .state.press .demo { background: #7C7691; transform: scale(0.985); box-shadow: 0 1px 2px rgba(58,58,63,.04); }
+  .state.focus .demo { box-shadow: 0 0 0 1px rgba(107,207,255,0.6), 0 0 0 5px rgba(107,207,255,0.18); }
+  .spec { font-family: var(--font-mono); font-size: 10px; color: var(--fg-muted); letter-spacing: 0.03em; line-height: 1.5; }
+</style></head>
+<body>
+<div class="card">
+  <div class="row between center-x">
+    <div class="label">Interaction States</div>
+    <div class="mono">--ease-soft · settles like mist, no bounce</div>
+  </div>
+  <div class="grid">
+    <div class="state rest"><span class="name">Rest</span><div class="demo">Order now</div><span class="spec">misty-purple #B8B4C6</span></div>
+    <div class="state hover"><span class="name">Hover</span><div class="demo">Order now</div><span class="spec">deepen → purple-400 #9A95AB</span></div>
+    <div class="state press"><span class="name">Press</span><div class="demo">Order now</div><span class="spec">scale(0.985) + deeper</span></div>
+  </div>
+  <div class="grid" style="grid-template-columns: 1fr;">
+    <div class="state focus"><span class="name">Focus</span><div class="demo">Order now</div><span class="spec">cool-blue ring · rgba(107,207,255,0.6) 1px + 0.18 4px halo</span></div>
+  </div>
+</div>
+</body></html>

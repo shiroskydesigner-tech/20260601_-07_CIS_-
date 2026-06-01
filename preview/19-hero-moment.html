@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Hero Moment</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  html, body { height: 100%; }
+  body { background: linear-gradient(135deg, #E6D8E9 0%, #B8B4C6 55%, #9A95AB 100%); }
+  .hero {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 36px 48px;
+    color: var(--mio-white);
+    display: flex; flex-direction: column; justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .top { display: flex; align-items: center; justify-content: space-between; }
+  .wordmark { font-family: var(--font-display); font-size: 22px; letter-spacing: 0.18em; }
+  .nav { display: flex; gap: 28px; font-family: var(--font-display); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; opacity: 0.85; }
+  .stage { display: flex; align-items: flex-end; gap: 16px; }
+  .stage h1 { font-family: var(--font-display); font-weight: 300; font-size: 96px; line-height: 0.95; letter-spacing: 0.02em; }
+  .stage h1 em { font-style: italic; font-weight: 400; }
+  .bottom { display: flex; align-items: flex-end; justify-content: space-between; }
+  .tagline { font-family: var(--font-display); font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase; opacity: 0.92; }
+  .zh { font-family: var(--font-cjk); font-size: 13px; letter-spacing: 0.3em; opacity: 0.8; margin-top: 6px; }
+  .mark { position: absolute; top: 36px; right: 48px; width: 56px; }
+</style></head>
+<body>
+<div class="hero">
+  <div class="top">
+    <div class="wordmark">M I O 7</div>
+    <div class="nav"><span>Menu</span><span>Stores</span><span>Story</span><span>Journal</span></div>
+  </div>
+  <div class="stage">
+    <h1>Always<br/><em>on your mind.</em></h1>
+  </div>
+  <div class="bottom">
+    <div>
+      <div class="tagline">A L W A Y S&nbsp;&nbsp;O N&nbsp;&nbsp;Y O U R&nbsp;&nbsp;M I N D</div>
+      <div class="zh">想 喝 的 時 候 ， 就 會 想 到</div>
+    </div>
+    <div class="tagline" style="opacity:0.7;">07 · Kaohsiung</div>
+  </div>
+</div>
+</body></html>

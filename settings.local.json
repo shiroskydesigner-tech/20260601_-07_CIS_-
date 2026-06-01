@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "Bash(mv \"C:/Users/Win/.claude/.claude/skills/ui-ux-pro-max\" \"C:/Users/Win/.claude/skills/ui-ux-pro-max\")",
+      "Bash(rmdir \"C:/Users/Win/.claude/.claude/skills\")",
+      "Bash(rmdir \"C:/Users/Win/.claude/.claude\")"
+    ]
+  }
+}

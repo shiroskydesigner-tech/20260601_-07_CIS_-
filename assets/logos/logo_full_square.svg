@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.73 441.73">
+  <!-- Background: 霧銀紫 -->
+  <rect x="0" y="0" width="441.73" height="441.73" fill="#B8B4C6"/>
+
+  <!-- 0 + 7 mark (white) -->
+  <g transform="translate(7.27 -20)">
+    <polygon fill="#F6F7F9" points="217.92 115 217.92 256.54 271 115 217.92 115"/>
+    <path fill="#F6F7F9" d="M182.54,115h0c-14.66,0-26.54,11.88-26.54,26.54v88.46c0,14.66,11.88,26.54,26.54,26.54s26.54-11.88,26.54-26.54v-88.46c0-14.66-11.88-26.54-26.54-26.54Z"/>
+  </g>
+
+  <!-- MIO7 wordmark (Latin) -->
+  <text x="220.86" y="312" fill="#F6F7F9"
+    font-family="'Cormorant Garamond','TeX Gyre Pagella',serif"
+    font-size="38" font-weight="400" letter-spacing="6.84"
+    text-anchor="middle"
+    style="font-feature-settings:'lnum' 1, 'tnum' 1; font-variant-numeric: lining-nums;">MIO7</text>
+
+  <!-- 澪柒 (CJK ceremonial) -->
+  <text x="190" y="378" fill="#F6F7F9"
+    font-family="'Source Han Sans TW','思源黑體','PingFang TC','Microsoft JhengHei',sans-serif"
+    font-size="38" font-weight="300">澪</text>
+  <text x="252" y="378" fill="#F6F7F9"
+    font-family="'Source Han Sans TW','思源黑體','PingFang TC','Microsoft JhengHei',sans-serif"
+    font-size="38" font-weight="300">柒</text>
+</svg>

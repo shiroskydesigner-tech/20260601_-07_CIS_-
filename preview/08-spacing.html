@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Spacing</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { gap: 14px; }
+  .scale { display: flex; flex-direction: column; gap: 8px; flex: 1; justify-content: center; }
+  .row-s { display: grid; grid-template-columns: 70px 80px 1fr; align-items: center; gap: 16px; }
+  .tag { font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); letter-spacing: 0.04em; }
+  .val { font-family: var(--font-display); font-size: 14px; color: var(--fg); }
+  .bar { height: 14px; background: var(--mio-misty-purple); border-radius: 3px; }
+</style></head>
+<body>
+<div class="card">
+  <div class="row between center-x">
+    <div class="label">Spacing · 4-pt Grid</div>
+    <div class="mono">--space-1 … --space-10</div>
+  </div>
+  <div class="scale">
+    <div class="row-s"><span class="tag">--space-1</span><span class="val">4px</span><span class="bar" style="width:4px"></span></div>
+    <div class="row-s"><span class="tag">--space-2</span><span class="val">8px</span><span class="bar" style="width:8px"></span></div>
+    <div class="row-s"><span class="tag">--space-3</span><span class="val">12px</span><span class="bar" style="width:12px"></span></div>
+    <div class="row-s"><span class="tag">--space-4</span><span class="val">16px</span><span class="bar" style="width:16px"></span></div>
+    <div class="row-s"><span class="tag">--space-5</span><span class="val">24px</span><span class="bar" style="width:24px"></span></div>
+    <div class="row-s"><span class="tag">--space-6</span><span class="val">32px</span><span class="bar" style="width:32px"></span></div>
+    <div class="row-s"><span class="tag">--space-7</span><span class="val">48px</span><span class="bar" style="width:48px"></span></div>
+    <div class="row-s"><span class="tag">--space-8</span><span class="val">64px</span><span class="bar" style="width:64px"></span></div>
+    <div class="row-s"><span class="tag">--space-9</span><span class="val">96px</span><span class="bar" style="width:96px"></span></div>
+    <div class="row-s"><span class="tag">--space-10</span><span class="val">128px</span><span class="bar" style="width:128px"></span></div>
+  </div>
+</div>
+</body></html>
