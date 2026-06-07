@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314.04 314.04"/>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.91 311.91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #ceb8d3;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="311.91" height="311.91"/>
+  <g>
+    <polygon class="cls-2" points="159.2 103.97 159.2 207.94 159.2 207.94 198.19 103.97 198.19 103.97 159.2 103.97 159.2 103.97"/>
+    <path class="cls-2" d="M133.21,103.97h0c-10.77,0-19.49,8.73-19.49,19.49v64.98c0,10.77,8.73,19.49,19.49,19.49s19.49-8.73,19.49-19.49v-64.98c0-10.77-8.73-19.49-19.49-19.49Z"/>
+  </g>
+</svg>

@@ -118,13 +118,13 @@
     {
       "name": "Secondary",
       "nameEn": "Secondary",
-      "file": "assets/logos/showcase/03-mark.svg",
+      "file": "assets/logos/_source/20260531_澪柒VI_識別手冊secondary-29.svg",
       "bg": "showcase"
     },
     {
       "name": "Secondary",
       "nameEn": "Secondary",
-      "file": "assets/logos/showcase/04-square.svg",
+      "file": "assets/logos/_source/20260531_澪柒VI_識別手冊secondary-30.svg",
       "bg": "showcase"
     }
   ],
@@ -252,10 +252,10 @@
       "usage": "科技時刻 — 数據視覺、focus 光、tech 過場"
     },
     {
-      "name": "霧霾光暈",
-      "nameEn": "Haze Radial",
-      "css": "radial-gradient(120% 90% at 20% 0%, #E6D8E9 0%, #F6F7F9 60%, #B8B4C6 120%)",
-      "usage": "氛圍光暈、英雄區光斑、深色背景上的呼吸光"
+      "name": "檸光限定",
+      "nameEn": "Lime Spark",
+      "css": "linear-gradient(135deg, #E6D8E9 0%, #B8B4C6 50%, #D4FF6A 100%)",
+      "usage": "季節限定 / 新品標 ── 絕不作為常駐色面"
     }
   ],
 
